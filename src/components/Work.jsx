@@ -1,33 +1,31 @@
-import { useNavigate } from "react-router-dom";
-
 export default function Work() {
-    const navigate = useNavigate();
 
+    
     const work = [
         {
-            name: 'Frontend project',
+            name: 'TimeCards Ai',
             icon: './assets/work-1.png',
             description: 'Auto Clock in and Clock out',
-            link: './timecards',
+            link: '',
         },
-        // {
-        //     name: 'Geo based app',
-        //     icon: './assets/work-2.png',
-        //     description: 'mobile app',
-        //     link: '',
-        // },
-        // {
-        //     name: 'Photography site',
-        //     icon: './assets/work-3.png',
-        //     description: 'Web Design',
-        //     link: '',
-        // },
-        // {
-        //     name: 'UI/UX designing',
-        //     icon: './assets/work-4.png',
-        //     description: 'UI/UX Design',
-        //     link: '',
-        // }
+        {
+            name: 'Geo based app',
+            icon: './assets/work-2.png',
+            description: 'geo fencing for mark projects',
+            link: '',
+        },
+        {
+            name: 'Attendence',
+            icon: './assets/work-3.png',
+            description: 'HRMS',
+            link: '',
+        },
+        {
+            name: 'Project Management',
+            icon: './assets/work-4.png',
+            description: 'Scrum',
+            link: '',
+        }
     ];
     return (
         <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
@@ -37,11 +35,7 @@ export default function Work() {
 
             <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
                 {work.map((work) => (
-                    <div
-                        onClick={() => navigate(work.link)}
-                        className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                        style={{ backgroundImage: `url(${work.icon})` }}
-                    >
+                    <div key={work.name} className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style={{ backgroundImage: `url(${work.icon})` }}>
                         <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                             <div>
                                 <h2 className="font-semibold">{work.name}</h2>
