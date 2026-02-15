@@ -7,7 +7,17 @@ export default function Header() {
                 <img src="./assets/hand-icon.png" alt="" className="w-6 mb-1" />
 
             </h3>
-            <a href="tel:+919990995310">+91 9990995310</a>
+            <div className="text-center">
+
+
+                <div className="w-max flex items-center gap-2 mx-auto">
+
+                    <a href="mailto:vrahul4996@gmail.com">vrahul4996@gmail.com</a>
+                    <a href="tel:+919990995310">+91 9990995310</a>
+                </div>
+
+
+            </div>
             <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">React native Developer</h1>
             <p className="max-w-2xl mx-auto font-Ovo">I am a React Native Mobile App Developer from India with 2+ years of experience building high-performance Android and iOS applications. I have developed and published production-ready apps using React Native, Redux, Firebase, Maps, and modern mobile development tools.</p>
 

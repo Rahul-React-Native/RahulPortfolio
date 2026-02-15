@@ -103,9 +103,9 @@ export default function Contact() {
             </form> */}
             <ul className="flex items-center gap-3 justify-center mt-4 sm:mt-0">
                 <img src="../assets/github.png" style={{height:30 ,width:30}}/>
-                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="github.com/Rahul-React-Native">GitHub</a></li>
                  <img src="../assets/linkedin.png" style={{height:30 ,width:30}}/>
-                <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+                <li><a href="linkedin.com/in/rahulvishwakarma">LinkedIn</a></li>
                
             </ul>
         </div>

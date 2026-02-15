@@ -46,16 +46,36 @@ export default function TimesheetProject() {
                         gap: "20px",              // space between images
                         height: "100vh",          // full viewport height
                         backgroundColor: '#0f0018',// optional, match your dark background
-                        marginLeft: 400
+                        marginLeft: 400,
+                        alignSelf: 'center'
                     }}
                 >
                     <div>
                         <img src={image1} style={{ maxWidth: "300px", width: "100%" }} />
-                        <img src={image3} style={{ maxWidth: "300px", width: "100%" }} />
+                        <a href="https://play.google.com/store/apps/details?id=com.geotimecard" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={image3}
+                                style={{ maxWidth: "300px", width: "100%" }}
+                                alt="GT Card App"
+                            />
+                        </a>
                     </div>
-                    <div>
-                        <img src={image2} style={{ maxWidth: "1200px", width: "100%" }} />
-                        <img src={image4} style={{ maxWidth: "400px", width: "100%" }} />
+                    <div style={{ marginBottom: '180px' }}>
+                        <img src={image2} style={{ maxWidth: "1100px", width: "100%", marginBottom: '190px' }} />
+                        <a href="https://apps.apple.com/us/app/gt-card/id6739786745" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={image4}
+                                style={{
+                                    maxWidth: "400px",
+                                    width: "100%",
+                                    height: "120px",
+                                    marginLeft: 350,
+                                    marginTop: '-150px'
+                                }}
+                                alt="GT Card App"
+                            />
+                        </a>
+
                     </div>
                 </div>
             </section>
@@ -75,7 +95,7 @@ export default function TimesheetProject() {
                     <h2>✨ Key Features</h2>
                     <ul>
                         <li>GPS-based attendance</li>
-                        <li>Clock In / Clock Out with live time</li>
+                        <li>Auto Clock In / Clock Out with live time</li>
                         <li>Break management system</li>
                         <li>Project allocation</li>
                         <li>User dashboard & reports</li>
@@ -86,10 +106,10 @@ export default function TimesheetProject() {
                 <div className="card">
                     <h2>🛠 Tech Stack</h2>
                     <ul>
-                        <li>React Native (Expo)</li>
-                        <li>Redux Toolkit + Thunk</li>
+                        <li>React Native cli</li>
+                        <li>Redux Toolkit + Sagas</li>
                         <li>Google Maps API</li>
-                        <li>Firebase / Node.js Backend</li>
+                        <li>Firebase</li>
                     </ul>
                 </div>
 
