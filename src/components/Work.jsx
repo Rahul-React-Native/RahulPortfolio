@@ -1,12 +1,14 @@
-export default function Work() {
+import { useNavigate } from "react-router-dom";
 
-    
+export default function Work() {
+    const navigate = useNavigate()
+
     const work = [
         {
             name: 'TimeCards Ai',
             icon: './assets/work-1.png',
             description: 'Auto Clock in and Clock out',
-            link: '',
+            link: './timcards',
         },
         {
             name: 'Geo based app',
@@ -35,7 +37,12 @@ export default function Work() {
 
             <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
                 {work.map((work) => (
-                    <div key={work.name} className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style={{ backgroundImage: `url(${work.icon})` }}>
+                    <div
+                        onClick={() => navigate(work.link)}
+                        key={work.name}
+                        className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+                        style={{ backgroundImage: `url(${work.icon})` }}
+                    >
                         <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                             <div>
                                 <h2 className="font-semibold">{work.name}</h2>

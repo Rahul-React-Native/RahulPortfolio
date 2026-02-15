@@ -6,6 +6,7 @@ import About from './components/About'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import LenisScroll from './components/LenisScroll'
+import TimesheetProject from './components/timcards'
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
             <Work />
             <Contact />
             <Footer />
+            {/* <TimesheetProject/> */}
       
 
         </>
