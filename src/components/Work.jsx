@@ -14,7 +14,7 @@ export default function Work() {
             name: 'Geo based app',
             icon: './assets/work-2.png',
             description: 'geo fencing for mark projects',
-            link: '',
+            link:  './tcPersonal',
         },
         {
             name: 'Attendence',

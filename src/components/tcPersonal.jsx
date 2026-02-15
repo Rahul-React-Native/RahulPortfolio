@@ -1,12 +1,12 @@
 import React from "react";
-import "./CSS/TimesheetProject.css";
+import "./CSS/TcPersonal.css";
 
-import image1 from "../../public/assets/timcards.jpeg"; // replace with your actual path
+import image1 from "../../public/assets/creating-geofencing.jpeg"; // replace with your actual path
 import image2 from "../../public/assets/iphone.png";
 import image3 from "../../public/assets/googlplay.png";
 import image4 from "../../public/assets/appstore.svg";
 
-export default function TimesheetProject() {
+export default function TcPersonalScreen() {
     return (
         <div className="project-page">
 
@@ -21,7 +21,7 @@ export default function TimesheetProject() {
 
             {/* MAIN HERO SECTION */}
             <section className="project-hero">
-                <h1 className="proj-title">Timecards AI App</h1>
+                <h1 className="proj-title">Timecard personal App</h1>
                 <p className="proj-subtitle">React Native • Redux • Maps • GPS Attendance</p>
 
 
@@ -39,7 +39,7 @@ export default function TimesheetProject() {
                 >
                     <div>
                         <img src={image1} style={{ maxWidth: "300px", width: "100%" }} />
-                        <a href="https://play.google.com/store/apps/details?id=com.geotimecard" target="_blank" rel="noopener noreferrer">
+                        <a href="https://play.google.com/store/apps/details?id=com.geotimecard_personal" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={image3}
                                 style={{ maxWidth: "300px", width: "100%" }}
@@ -49,7 +49,7 @@ export default function TimesheetProject() {
                     </div>
                     <div style={{ marginBottom: '180px' }}>
                         <img src={image2} style={{ maxWidth: "1100px", width: "100%", marginBottom: '190px' }} />
-                        <a href="https://apps.apple.com/us/app/gt-card/id6739786745" target="_blank" rel="noopener noreferrer">
+                        <a href="https://apps.apple.com/us/app/timecards-personal/id6743415483" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={image4}
                                 style={{

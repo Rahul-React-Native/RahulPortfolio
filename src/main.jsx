@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from './App.jsx'
 import TimesheetProject from './components/timcards.jsx'
 import './index.css'
+import TcPersonalScreen from './components/tcPersonal.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/timcards",
     element: <TimesheetProject />,
+  },
+  {
+    path: "/tcPersonal",
+    element: <TcPersonalScreen />,
   }
 ]);
 
