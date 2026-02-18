@@ -1,13 +1,13 @@
 import React from "react";
 import "./CSS/TimesheetProject.css";
 
-import image1 from "../../public/assets/timcards.jpeg"; // replace with your actual path
-import image2 from "../../public/assets/iphone.png";
+import image1 from "../../public/assets/androidSimu.jpeg"; // replace with your actual path
+import image2 from "../../public/assets/iphoneSimu1.png";
 import image3 from "../../public/assets/googlplay.png";
 import image4 from "../../public/assets/appstore.svg";
 import Navbar from "./Navbar";
 
-export default function TimesheetProject() {
+export default function SimuAgentsProject() {
     return (
         <div className="project-page">
 
@@ -17,13 +17,15 @@ export default function TimesheetProject() {
                     ← Back
                 </div>
 
-                
+
             </nav>
 
-           
+
             <section className="project-hero">
-                I<h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Timecards AI App</h1>
-                <p className="max-w-2xl mx-auto font-Ovo">React Native • Redux • Maps • GPS Attendance</p>
+                I<h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">SimuAgents App</h1>
+                <p className="max-w-2xl mx-auto font-Ovo">React Native • Redux • Firebase </p>
+
+
 
                 <div
                     style={{
@@ -38,8 +40,8 @@ export default function TimesheetProject() {
                     }}
                 >
                     <div>
-                        <img src={image1} style={{ maxWidth: "300px", width: "100%" }} />
-                        <a href="https://play.google.com/store/apps/details?id=com.geotimecard" target="_blank" rel="noopener noreferrer">
+                        <img src={image1} style={{ maxWidth: "300px", width: "100%", height: "600px" }} />
+                        <a href="https://play.google.com/store/apps/details?id=com.timecards.ai" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={image3}
                                 style={{ maxWidth: "300px", width: "100%" }}
@@ -47,16 +49,16 @@ export default function TimesheetProject() {
                             />
                         </a>
                     </div>
-                    <div style={{ marginBottom: '180px' }}>
-                        <img src={image2} style={{ maxWidth: "1100px", width: "100%", marginBottom: '170px' }} />
-                        <a href="https://apps.apple.com/us/app/gt-card/id6739786745" target="_blank" rel="noopener noreferrer">
+                    <div style={{ marginBottom: '170px' }}>
+                        <img src={image2} style={{ maxWidth: "950px", width: "100%", marginBottom: '200px' }} />
+                        <a href="https://apps.apple.com/us/app/simuagents/id6745402562" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={image4}
                                 style={{
                                     maxWidth: "400px",
                                     width: "100%",
                                     height: "120px",
-                                    marginLeft: 350,
+                                    marginLeft: 300,
                                     marginTop: '-150px'
                                 }}
                                 alt="GT Card App"
@@ -72,21 +74,21 @@ export default function TimesheetProject() {
                 <div className="card">
                     <h2 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">📱 Project Overview</h2>
                     <p className="max-w-2xl mx-auto font-Ovo">
-                        A production-ready mobile application built for employee attendance,
-                        GPS validation, project allocation, break system, and real-time
-                        tracking. Designed for Android & iOS using React Native.
+                        A production-ready mobile application built to support both HR and technical operations. 
+                        Simu HR helps employees with HR-related queries, while Simu Tech assists with technical issues and troubleshooting. 
+                        Designed for Android and iOS using React Native.
                     </p>
                 </div>
 
                 <div className="card">
                     <h2 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">✨ Key Features</h2>
-                    <ul className="max-w-2xl mx-auto font-Ovo">
-                        <li>GPS-based attendance</li>
-                        <li>Auto Clock In / Clock Out with live time</li>
-                        <li>Break management system</li>
-                        <li>Project allocation</li>
-                        <li>User dashboard & reports</li>
-                        <li>Google Maps integration</li>
+                    <ul className="max-w-2xl mx-auto font-Ovo space-y-2">
+                        <li>Simu HR support for HR-related employee queries</li>
+                        <li>Simu Tech assistance for technical issues and troubleshooting</li>
+                        <li>Centralized platform for both HR and tech operations</li>
+                        <li>Employee helpdesk system with quick response flow</li>
+                        <li>Cross-platform support for Android & iOS</li>
+                        <li>Built using React Native for optimized performance</li>
                     </ul>
                 </div>
 
@@ -95,8 +97,7 @@ export default function TimesheetProject() {
                     <ul className="max-w-2xl mx-auto font-Ovo">
                         <li>React Native cli</li>
                         <li>Redux Toolkit + Sagas</li>
-                        <li>Google Maps API</li>
-                         <li>axios</li>
+                        <li>axios</li>
                         <li>Firebase</li>
                     </ul>
                 </div>

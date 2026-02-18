@@ -5,16 +5,16 @@ export default function Work() {
 
     const work = [
         {
-            name: 'TimeCards Ai',
+            name: 'TimeCards AI App',
             icon: './assets/work-1.png',
             description: 'Auto Clock in and Clock out',
             link: './timcards',
         },
         {
-            name: 'Geo based app',
+            name: 'SimuAgents app',
             icon: './assets/work-2.png',
-            description: 'geo fencing for mark projects',
-            link:  './tcPersonal',
+            description: 'Talk to Agents',
+            link:  './simuAgents',
         },
         {
             name: 'Attendence',

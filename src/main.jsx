@@ -5,7 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from './App.jsx'
 import TimesheetProject from './components/timcards.jsx'
 import './index.css'
-import TcPersonalScreen from './components/tcPersonal.jsx';
+import TcPersonalScreen from './components/simuAgents.jsx';
+import SimuAgentsProject from './components/simuAgents.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,8 @@ const router = createBrowserRouter([
     element: <TimesheetProject />,
   },
   {
-    path: "/tcPersonal",
-    element: <TcPersonalScreen />,
+    path: "/simuAgents",
+    element: <SimuAgentsProject />,
   }
 ]);
 
